@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <script
+      crossorigin
+      src="https://unpkg.com/react@16/umd/react.development.js"
+    ></script>
+    <script
+      crossorigin
+      src="https://unpkg.com/react-dom@16/umd/react-dom.development.js"
+    ></script>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+  </head>
+
+  <body>
+    <div id="dd"></div>
+
+    <script type="text/babel">
+
+        const Leftside = () =>{
+          return(  <div style={{backgroundColor:"lightgrey",width:"30%",height:"100%",paddingTop:"10px",float:"left"}}>
+          <p style={{fontSize:""}}></p>
+           <center> <img src={"shalu.jpg"} style={{width:"200px",height:"200px",clipPath: "circle(50% at 50% 50%)",marginTop:"20px"}}/></center>
+           <center><p style={{marginTop:"20px",fontSize:"40px",fontWeight:"normal",fontFamily:"'Times New Roman', Times, serif"}}>SHALINIE</p></center>
+           <img src="mail.png"  style={{marginTop:"0px",marginLeft:"100px",width:"30px",height:"30px"}} /><p style={{marginTop:"-30px",marginLeft:"140px",fontSize:"20px",fontWeight:"normal",fontFamily:"'Times New Roman', Times, serif"}}>
+           shalushalinie22@gmail.com</p>
+           
+           <center><a href="index.html" style={{color:"black",fontSize:"25px",fontWeight:"normal",fontFamily:"'Times New Roman', Times, serif"}}>About</a></center><br/>
+           <center><a href="contact.html" style={{color:"black",fontSize:"25px",fontWeight:"normal",fontFamily:"'Times New Roman', Times, serif"}} >Contact</a></center><br/>
+           <center><a href="education.html" style={{color:"black",fontSize:"25px",fontWeight:"normal",fontFamily:"'Times New Roman', Times, serif"}}>Education</a></center><br/>
+       
+           <center><a href="skills.html" style={{color:"black",fontSize:"25px",fontWeight:"normal",fontFamily:"'Times New Roman', Times, serif"}}>Skills</a></center><br/>
+          
+           <center><p><a href="https://www.linkedin.com/in/shalinie-perumal-4a647b167/"><img src="lin.png" style={{width:"50px",height:"50px"}}/></a>
+            <a href="https://github.com/shalinie22"><img src="gith.png" style={{marginLeft:"20px",width:"50px",height:"50px"}}/></a></p></center>
+
+            </div>)
+        }
+
+        const Rightside=()=>{
+          return(
+            <div style={{backgroundColor:"whitesmoke",width:"70%",height:"720px",paddingTop:"10px",float:"right"}}>
+            <p style={{marginLeft:"50px",marginTop:"150px",color:"black",fontSize:"40px",fontFamily:"'Times New Roman', Times, serif"}}><img src="ab.png" style={{width:"50px",height:"50px"}}/> ABOUT MYSELF</p>
+            <p style={{marginLeft:"100px",marginTop:"50px",color:"darkgrey",fontSize:"30px",fontFamily:"'Times New Roman', Times, serif"}}>I am Shalinie,<br/><br/>I love to work in a challenging and dynamic environment
+with<br/> maximum potential, where I can utilize and apply
+my knowledge <br/>and skills by achieving the
+organization goals.</p>
+
+
+              <p style={{marginLeft:"300px",marginTop:"00px",color:"darkgrey",fontSize:"30px",fontFamily:"'Times New Roman', Times, serif"}}>My CV
+                <a href=" https://shalinie22.github.io/portfolio/" style={{marginTop:"00px"}}><img src="cv.png" style={{marginLeft:"20px",width:"30px",height:"30px"}}/></a></p>
+              
+
+            </div>
+          )
+        }
+
+    const Portfolio =()=>{
+        return (
+            <div>
+            <Leftside/>
+            <Rightside/>
+            </div>
+        )
+    }
+
+ ReactDOM.render(<Portfolio />, document.getElementById("dd"));
+    </script>
+  </body>
+</html>
